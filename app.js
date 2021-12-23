@@ -68,6 +68,10 @@ app.get("/all-friend", (req, res)=>{
   })
 })
 
+app.get("foo", (req, res)=>{
+  res.send({message:"Hello, I Am Omkar!"});
+})
+
 app.get("/", (req, res)=>{
   Friend.find((err, Friends)=>{
     if(err){
